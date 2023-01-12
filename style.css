@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./images/donation5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/* our donate plan section css start here */
+.donate-plan-container {
+  margin: 50px 50px;
+}
+.donate-plan-container h1 {
+  text-align: center;
+}
+.donate-plan-container p {
+  font-size: 0.9rem;
+  color: #707070;
+  margin: 40px 0;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+.card-container .card {
+  border: none;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+.food-bg {
+  background: rgba(79, 157, 166, 0.1);
+}
+.shelter-bg {
+  background: rgba(255, 89, 89, 0.1);
+}
+.education-bg {
+  background: #fff4d6;
+}
+.card img {
+  margin-top: 20px;
+}
+.card h3 {
+  color: #121212;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: serif;
+  margin-top: 20px;
+}
+/* live depend section start here */
+.live-depend-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+  margin: 50px 50px;
+  text-align: center;
+}
+.live-content p {
+  color: #707070;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+.live-content button {
+  width: 180px;
+  height: 50px;
+  color: white;
+  background: #ff5959;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+.live-content button:hover {
+  transform: translateY(-10px);
+}
+.live-image img {
+  width: 100%;
+}
+/* my update section start here */
+.update-container {
+  margin: 50px 50px;
+  text-align: center;
+}
+.update-container p {
+  color: #707070;
+  font-size: 0.9rem;
+}
+.subscribe {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  background: #fff4d6;
+  padding: 80px 0;
+}
+.subscribe input[type="email"] {
+  background: #d9d9d9;
+  width: 150px;
+  height: 25px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.subscribe button {
+  width: 80px;
+  height: 35px;
+  padding: 5px;
+  border: none;
+  background: #ff5959;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* footer section start here */
+.footer-container {
+  background: #0b0d17;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container h2 {
+  color: #ff5959;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+.footer-container p {
+  color: #c0c0c0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* header section css start here */
+  .header-content {
+    text-align: left;
+    margin: 0 80px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .header-content p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .primary-btn {
+    background-color: #ff5959;
+    color: white;
+    height: 45px;
+    width: 110px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .primary-btn:hover {
+    background: #e46a6a;
+    transform: translateY(-10px);
+  }
+  /* donate today responsive start here */
+  .donate-container {
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-title {
+    font-family: serif;
+    color: #121212;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .donate-container p {
+    color: #707070;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  .donate-amount .amount {
+    font-family: serif;
+    font-size: 1.2rem;
+    color: #707070;
+    height: 60px;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .donate-amount .amount:hover {
+    border: 1px solid #ff5959;
+    border-radius: 5px;
+  }
+  .donate-amount {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .donate-container .hr {
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* header section css start here */
+  .header-content {
+    text-align: left;
+    margin: 0 100px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .header-content p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .primary-btn {
+    background-color: #ff5959;
+    color: white;
+    height: 45px;
+    width: 110px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .primary-btn:hover {
+    background: #e46a6a;
+    transform: translateY(-10px);
+  }
+  /* donate today responsive start here */
+  .donate-container {
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-title {
+    font-family: serif;
+    color: #121212;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .donate-container p {
+    color: #707070;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  .donate-amount .amount {
+    font-family: serif;
+    font-size: 1.2rem;
+    color: #707070;
+    height: 60px;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .donate-amount .amount:hover {
+    border: 1px solid #ff5959;
+    border-radius: 5px;
+  }
+  .donate-amount {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .donate-container .hr {
+    text-align: center;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 5px;
+    width: 70%;
+  }
+  /* our donate plan section start here */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  /* live depend section start here */
+  .live-depend-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin: 50px 50px;
+    text-align: left;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* header section css start here */
+  .header-content {
+    text-align: center;
+    margin: 0 110px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-content h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .header-content p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .primary-btn {
+    background-color: #ff5959;
+    color: white;
+    height: 50px;
+    width: 113px;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .primary-btn:hover {
+    background: #e46a6a;
+    transform: translateY(-10px);
+  }
+  /* donate today responsive start here */
+  .donate-container {
+    margin: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-title {
+    font-family: serif;
+    color: #121212;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+  }
+  .donate-container p {
+    color: #707070;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .donate-amount .amount {
+    font-family: serif;
+    font-size: 1.5rem;
+    color: #707070;
+    height: 60px;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .donate-amount .amount:hover {
+    border: 1px solid #ff5959;
+    border-radius: 5px;
+  }
+  .donate-amount {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .donate-container .hr {
+    text-align: center;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 5px;
+    width: 70%;
+  }
+  /* our donate plan section start here */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  /* live depend section start here */
+  .live-depend-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 50px 50px;
+    text-align: left;
+  }
+  .live-content {
+    width: 50%;
+  }
+  .live-image {
+    width: 50%;
+    display: flex;
+    align-self: center;
+  }
+  /* my update section start here */
+  .update-container p {
+    margin: 0 100px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .subscribe {
+    margin: 0 80px;
+  }
+  .subscribe input[type="email"] {
+    width: 180px;
+  }
+  .subscribe button {
+    width: 90px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* header section css start here */
+  .header-content {
+    text-align: center;
+    margin: 0 200px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .header-content p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .primary-btn {
+    background-color: #ff5959;
+    color: white;
+    height: 50px;
+    width: 125px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .primary-btn:hover {
+    background: #e46a6a;
+    transform: translateY(-10px);
+  }
+  /* donate today responsive start here */
+  .donate-container {
+    margin: 50px 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-title {
+    font-family: serif;
+    color: #121212;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+  }
+  .donate-container p {
+    text-align: center;
+    color: #707070;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .donate-amount .amount {
+    font-family: serif;
+    font-size: 1.6rem;
+    color: #707070;
+    height: 60px;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .donate-amount .amount:hover {
+    border: 1px solid #ff5959;
+    border-radius: 5px;
+  }
+  .donate-amount {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .donate-container .hr {
+    text-align: center;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 5px;
+    width: 70%;
+  }
+  /* our donate plan section start here */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .donate-plan-container {
+    margin: 50px 100px;
+  }
+  .donate-plan-container .header-des {
+    font-size: 1rem;
+    text-align: center;
+    color: #707070;
+    margin: 40px 300px;
+  }
+  .card p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .card h3 {
+    text-align: left;
+  }
+  .card img {
+    display: flex;
+    justify-items: flex-start;
+  }
+  /* live depend section start here */
+  .live-depend-container {
+    margin: 100px 100px;
+  }
+  .live-content {
+    align-self: center;
+  }
+  .live-depend-container p {
+    font-size: 1rem;
+  }
+  /* my update section start here */
+  .update-container p {
+    margin: 0 170px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .subscribe {
+    margin: 0 150px;
+  }
+  .subscribe input[type="email"] {
+    width: 190px;
+  }
+  .subscribe button {
+    width: 100px;
+  }
+}
